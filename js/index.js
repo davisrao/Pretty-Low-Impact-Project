@@ -13,21 +13,41 @@ $(document).ready(function(){
 		$('.hamburger').fadeIn();
 		$('#X').hide();
 	}
+
  //Dive in button
-$('.header-btn').click(enterSite);
+$('.body-btn').click(showMore);
 
-function enterSite(){
+function showMore(){
+
 	$('#top-section').fadeOut('fast');
-	$('.start-hidden').fadeIn('slow');
-	$('#back-home-bar').slideDown('slow');
+	$('.start-hidden').toggle('slow');
 	}
 
-$('#back-home-bar').click(backHome);
-function backHome(){
-	$('#top-section').fadeIn('fast');
-	$('.start-hidden').fadeOut('slow');
-	$('#back-home-bar').hide();
+$('#recipe-button').click(showRecipes);
+
+function showRecipes(){
+	$('#business-to-show').fadeOut('fast');
+	$('#recipes-to-show').slideToggle('slow');
+	document.getElementById('recipe-scroll-to').scrollIntoView();
+}
+
+$('#business-button').click(showBusiness);
+
+function showBusiness(){
+	$('#recipes-to-show').fadeOut('fast');
+	$('#business-to-show').slideToggle('slow');
+	document.getElementById('recipe-scroll-to').scrollIntoView();
 	}
 
+$('#business-x').click(hideBusiness);
+function hideBusiness(){
+	$('#business-to-show').fadeOut('fast');
+	document.getElementById('header').scrollIntoView();
+	}
+$('#recipe-x').click(hideRecipes);
+function hideRecipes(){
+	$('#recipes-to-show').fadeOut('fast');
+	document.getElementById('header').scrollIntoView();
+	}
 
 });
