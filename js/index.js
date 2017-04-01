@@ -19,14 +19,15 @@ $('.body-btn').click(showMore);
 
 function showMore(){
 
-	$('#top-section').fadeOut('fast');
-	$('.start-hidden').toggle('slow');
+	$('#top-section').fadeOut('slow');
+	$('.start-hidden').fadeIn('fast');
 	}
 
 $('#recipe-button').click(showRecipes);
 
 function showRecipes(){
 	$('#business-to-show').fadeOut('fast');
+	$('#fashion-to-show').fadeOut('fast');
 	$('#recipes-to-show').slideToggle('slow');
 	document.getElementById('recipe-scroll-to').scrollIntoView();
 }
@@ -35,10 +36,17 @@ $('#business-button').click(showBusiness);
 
 function showBusiness(){
 	$('#recipes-to-show').fadeOut('fast');
+	$('#fashion-to-show').fadeOut('fast');
 	$('#business-to-show').slideToggle('slow');
 	document.getElementById('recipe-scroll-to').scrollIntoView();
 	}
-
+$('#fashion-button').click(showFashion);
+function showFashion(){
+	$('#business-to-show').fadeOut('fast');
+	$('#recipes-to-show').fadeOut('fast');
+	$('#fashion-to-show').slideToggle('slow');
+	document.getElementById('recipe-scroll-to').scrollIntoView();
+}
 $('#business-x').click(hideBusiness);
 function hideBusiness(){
 	$('#business-to-show').fadeOut('fast');
@@ -49,5 +57,9 @@ function hideRecipes(){
 	$('#recipes-to-show').fadeOut('fast');
 	document.getElementById('header').scrollIntoView();
 	}
-
+$('#fashion-x').click(hideFashion);
+function hideFashion(){
+	$('#fashion-to-show').fadeOut('fast');
+	document.getElementById('header').scrollIntoView();
+	}
 });

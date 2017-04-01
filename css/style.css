@@ -45,9 +45,9 @@ body {
      color: #000;
      font-size: 12px;
      line-height: 1.4;
-     font-family: Helvetica, Arial, sans-serif;
-    
+     font-family: Helvetica, Arial, sans-serif;  
 }
+
 .font{
   font-family: 'Open Sans', sans-serif;
 }
@@ -58,9 +58,9 @@ body {
 /* BODY STYLES
 /*******************************************/
 .header{
-    background:#004d00;
+    background:#1c3817;
     border:solid 2px black;
-    opacity:.6;
+    opacity:.9;
 }
 .hamburger{
     width:1vw;
@@ -76,7 +76,7 @@ body {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    position:relative;
+    margin-top:10vh;
 
 }
 
@@ -91,12 +91,20 @@ body {
 
 }
 
+html{
+  background-image:none;  background-color:#FFFFFF;
+}
+li{
+  list-style-type:none;
+}
+
+
 #X{
   display:none;
   color:white;
   font-size:36px;
   text-align:right;
-  margin-right:10vw;
+  margin-right:7vw;
 }
 
 .line{
@@ -118,13 +126,14 @@ body {
     margin-right:5px;
     padding-top:7px;
     padding-right:15px;
-    font-size:12px;
-    text-decoration:underline;
+    font-size:16px;
+    text-decoration:none;
     font-weight:bold;
 }
 
 .nav-link a {
     color:white;
+
 }
 section{
     border:solid 2px black;
@@ -146,16 +155,20 @@ section{
     background:lightgray;
 }
 .tri-container{
+  height:100vh;
     border:solid 2px black;
     background-position: center;
     background-size: cover;
     text-align:center;
-    background:#606161;
-    height:100vh;
+ background-color: #273624;
+background-image: url("https://www.transparenttextures.com/patterns/light-aluminum.png");
+    background-size:100% 100%;
+
+
 
 }
 .tri-box{
-     border:solid 2px black;
+     border:solid 2px white;
      margin-top:7vh;
      margin-right:auto;
      margin-left:8vw;
@@ -163,7 +176,7 @@ section{
      font-family: 'Quicksand', sans-serif;
      color:white;
      font-size:14px;
-     box-shadow: 5px 5px 2.5px grey;   
+     box-shadow: 5px 5px 2.5px black;   
      height:20vh; 
 }
 .title-text{
@@ -177,7 +190,7 @@ section{
     border:solid 2px black;
     margin-top:10vh;
     padding-top:5px;
-    width:20vw;
+    width:30vw;
     font-weight:bold;
     font-size:16px;
     color:black;
@@ -202,11 +215,15 @@ section{
     opacity:.85;
     margin-bottom:1vh;
     text-decoration:none;
+    color:black;
+    box-shadow: 0px 2px 2px 0px gray;
 }
 #foot-banner{
-  background:lightgray;
+ background-color: #1c3817;
+background-image: url("https://www.transparenttextures.com/patterns/xv.png");
+
   text-align:center;
-  height:80vh;
+
 
 }
 #footer{
@@ -266,22 +283,26 @@ section{
  background:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(../images/low_impact_recipes.jpg)  no-repeat center top;
     background-size:100% 100%;
     vertical-align:middle;
-}
 
+}
+.link-bullets {
+    display:inline-block;
+    margin-top:1vh;
+}
+.link-bullets li{
+    padding-top:.5vh;
+}
 
 #business1{
      background:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(../images/low_impact_business.jpg)  no-repeat center top;
     background-size:100% 100%;
 }
-
-.link-bullets {
-    display:inline-block;
-    margin-top:4vh;
+#fashion1{
+     background:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(../images/low_impact_fashion.jpeg)  no-repeat center top;
+    background-size:100% 100%;
 
 }
-.link-bullets li{
-    padding-top:.5vh;
-}
+
 .link-title{
     font-weight:bold;
 }
@@ -294,11 +315,42 @@ section{
   text-align:right;
   margin-right:10vw;
   font-weight:bold;
+  cursor:pointer;
+}
+.recipe-x{
+  cursor:pointer;
+
 }
 .spacing{
     padding:50px;
 }
+#recipes-to-show{
+   background-color: lightgray;
+}
+#business-to-show{
+    background-color: lightgray;
+}
+#fashion-to-show{
+    background-color: lightgray;
+  
+}
+#title1{
+  margin-top:1vh;
+  font-weight:bold;
+}
 
+label{
+  margin-bottom:3vh;
+  margin-top:2vh;
+}
+.contact-container{
+  background:lightgray;
+  text-align:left;
+}
+
+form{
+  margin-left:15vw;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -324,6 +376,10 @@ height:60vh;
     display:inline-block;
     margin-top:30vh;
     font-size:16px;
+}
+
+form{
+  margin-left:0;
 }
 /******************************************
 /* ADDITIONAL STYLES
