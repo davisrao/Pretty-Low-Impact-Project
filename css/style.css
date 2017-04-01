@@ -117,7 +117,11 @@ li{
 } 
 .list{
     list-style:none;
+}
 
+
+.btn-text{
+   font-weight:bold;
 }
 
 .nav-link{
@@ -305,6 +309,11 @@ background-image: url("https://www.transparenttextures.com/patterns/xv.png");
 
 .link-title{
     font-weight:bold;
+    font-size:16px;
+}
+
+.full-article{
+  font-size:16px;
 }
 .start-hidden-2{
     display:none;
